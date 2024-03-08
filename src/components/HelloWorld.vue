@@ -4,79 +4,96 @@
 
 <template>
   <div class="greetings">
-    <figure><a href="../img/photo.jpg" target="_blank"><img src="../img/photo.jpg" alt="photo candidat"></a></figure>
-    <a href="">présentation</a>
-    <select name="Creations" id="Create">
-      <option value="">Mes créations</option>
-      <option value="Mon CV">Mon cv</option>
-      <option value="Cahier des charges">Cahier des charges</option>
-      <option value="Dynamiser un espace commentaire">Dynamiser un espace commentaire</option>
-    </select>
-    <a href="">contact</a>
+    <!--<figure><a href="../img/photo.jpg" target="_blank"><img src="../img/photo.jpg" alt="photo candidat"></a></figure>-->
+    <div class="navBar">  
+      <a href="">Présentation</a>
+      <a href="">Mon CV</a>
+      <a href="">Cahier des charges</a>
+      <a href="">Espace commentaire dynamique</a>
+      <a href="">Me contacter</a>
+      <input type="image" class="btnUp" src="../img/">
+    </div>
   </div>
 </template>
 
 <style scoped>
-header img {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 30px #2c1d27;
+/*button img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 30px #2c1d27;
+}*/
+
+.btnUp {
+  width: 50px;
+  height: 50px;
 }
 
 
 figure {
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    padding-top: 25px;
-    }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding-top: 25px;
+}
 
 figure a:hover {
-    cursor: zoom-in;
+  cursor: zoom-in;
 }
 
 header {
-    color: white;
-    background-color: #1da593;
-    text-align: center;
-}
-
-header, nav {
-    color: white;
-    background-color: #1da593;
-    justify-content: space-between;
-}
-
-select, option {
-    color: white;
-    background-color: #1da593;
-    border: white 2px solid;
-    margin: 0 0 2rem 0;
-}
-
-
-/*h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
+  color: white;
+  background-color: #1da593;
   text-align: center;
 }
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}*/
+header, nav {
+  color: white;
+  background-color: #1da593;
+  justify-content: space-between;
+}
+
+select, option {
+  color: white;
+  background-color: #1da593;
+  border: white 2px solid;
+  margin: 0 0 2rem 0;
+}
+
+.navBar  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.greetings {
+  overflow: hidden;
+  background-color: #1da593;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.greetings a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  background: hsl(315, 14%, 95%);
+  color:#1da593;
+}
+
+.main {
+  margin-top: 255px;
+}
 </style>
