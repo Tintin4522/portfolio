@@ -1,13 +1,67 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+
 </script>
 
 <template>
+  <div class="container">
+    <img src="../img/Nature.jpg" alt="image nature" style="width: auto;">
+    <div class="presMe">
+      <div class="textImg">
+      <h3>Qui je suis ?</h3>
+      <p>
+        Bonjour, je m'appel Tintin4522, j'ai 37 ans et je suis en reconversion professionnelle en tant que Développeur Web. <br>
+        Je vais vous présentez ici mes différentes réalisation en HTML, CSS et JavaScript. <br>
+        Bonne visite à vous.
+      </p>
+      </div>
+    </div>
+  </div>
+
+</template>
+
+<style scoped>
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  background-color: #f1f1f1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.presMe {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  background-color: aliceblue;
+  text-align: center;
+  opacity: 3;
+}
+
+.textImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+
+</style>
+
+
+
+
+
+<!-- CODE INITIAL POUR MODELE -->
+
+
+<!--<template>
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
@@ -85,4 +139,4 @@ import SupportIcon from './icons/IconSupport.vue'
     us by
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
   </WelcomeItem>
-</template>
+</template>-->

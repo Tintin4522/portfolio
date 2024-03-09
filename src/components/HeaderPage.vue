@@ -4,32 +4,20 @@
 
 <template>
   <div class="greetings">
-    <!--<figure><a href="../img/photo.jpg" target="_blank"><img src="../img/photo.jpg" alt="photo candidat"></a></figure>-->
     <div class="navBar">  
       <a href="">Présentation</a>
-      <a href="">Mon CV</a>
-      <a href="">Cahier des charges</a>
-      <a href="">Espace commentaire dynamique</a>
+      <a href="">Mes projets</a>
       <a href="">Me contacter</a>
-      <input type="image" class="btnUp" src="../img/">
+      <a href="#" ><img class="btnUpPage"  src="../img/home2.png" alt="bouton retour haut page"></a>
     </div>
   </div>
 </template>
 
 <style scoped>
-/*button img {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 0 0 30px #2c1d27;
-}*/
-
-.btnUp {
-  width: 50px;
-  height: 50px;
+.btnUpPage {
+  height: 40px;
+  width: 40 px;
 }
-
 
 figure {
   display: block;
@@ -76,7 +64,7 @@ select, option {
   position: fixed;
   top: 0;
   width: 100%;
-
+  z-index: 1;
 }
 
 .greetings a {
@@ -91,6 +79,7 @@ select, option {
 .navBar a:hover {
   background: hsl(315, 14%, 95%);
   color:#1da593;
+  text-decoration: underline;
 }
 
 .main {

@@ -1,51 +1,40 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HeaderPage from './components/HeaderPage.vue'
+import HomePage from './components/HomePage.vue'
+import ProjetsPage from './components/ProjetsPage.vue'
+import FooterPage from './components/FooterPage.vue'
 </script>
 
 <template>
   <header>
-        <div class="wrapper">
-      <HelloWorld msg="You did it!!!!!!!" />
+    <div class="header">
+      <HeaderPage />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <div class="Presentation">
+      <HomePage />
+    </div>
+  
+    <div class="Projets">
+      <ProjetsPage />
+    </div>
   </main>
-
+  
   <footer>
-      <div>
-      <a href="https://www.linkedin.com/in/kevin-pierre-776b742a9" target="_blank"><img src="./img/linkedin-logo.png" alt="lien linkedin"></a>
-      <a href="https://github.com/Tintin4522" target="_blank"><img src="./img/github-logo.png" alt="lien github"></a>
-      <p>dernière mise à jour 08 mars 2024</p>
-      </div>
+      <FooterPage />
   </footer>
 </template>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+}
+
 main {
-  padding-top: 225px;
+  padding-top: 60px;
 }
-
-footer {
-    background-color: #1da593;
-    color: white;
-    text-align: center;
-}
-
-footer img {
-    width: 50px;
-    height: 50px;
-}
-
-footer div {
-    align-items: center;
-}
-
-footer div a:hover{
-    opacity: 0.5;
-}
-
 
 </style>
