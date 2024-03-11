@@ -6,7 +6,7 @@
     <div class="Footer">
       <a href="https://www.linkedin.com/in/kevin-pierre-776b742a9" target="_blank"><img src="../img/linkedin-logo.png" alt="lien linkedin"></a>
       <a href="https://github.com/Tintin4522" target="_blank"><img src="../img/github-logo.png" alt="lien github"></a>
-      <p>dernière mise à jour 09 mars 2024</p>
+      <p>dernière mise à jour 10 mars 2024</p>
     </div>
 </template>
 

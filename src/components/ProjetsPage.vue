@@ -1,35 +1,48 @@
 <script setup>
 
+
+
+
 </script>
 
 <template>
     <div class="projets" >
         <h1>Mes projets</h1>
 
-        <h2>Portfolio</h2>
-        <p>Voici une présentation des mes réalisations</p>
+        <h2>Voici une présentation des mes réalisations</h2>
+        
 
         <div class="imgProjets">
             <div class="column">
-                <img src="../Proj/CV.png" alt="Mon CV" style="width: 100%;">
-                <h3>Mon CV</h3>
+                
+                <button id="myBtn">
+                <div class="content">
+                    <img src="../Proj/CV.png" alt="Mon CV" style="width: 100%;">
+                    <h3>Mon CV</h3>
+                </div>                              
+                </button>
+                
             </div>
         
             <div class="column">
-                <img src="../Proj/Cahier.png" alt="Cahier des charges" style="width: 100%;">
-                <h3>Cahier des charges</h3>
+                <div class="content">
+                    <img src="../Proj/Cahier.png" alt="Cahier des charges" style="width: 100%;">
+                    <h3>Cahier des charges</h3>
+                </div>
             </div>
-        </div>
-        <div class="imgProjets">
             <div class="column">
-                <img src="../Proj/Commentaire.png" alt="espace commentaire" style="width: 100%;">
-                <h3>Espace commentaire dynamique</h3>
-            </div>
-        </div> 
+                <div class="content">
+                    <img src="../Proj/Commentaire.png" alt="espace commentaire" style="width: 100%;">
+                    <h3>Espace commentaire dynamique</h3>
+                </div>
+            </div> 
+        </div>
     </div>
 </template>
 
 <style scoped>
+
+/* CSS de la page*/
 * {
     box-sizing: border-box;
 }
@@ -44,6 +57,14 @@ h1 {
     font-size: 50px;
     word-break: break-all;
     text-align: center;
+    color: #1da593;
+}
+
+h2 {
+    font-size: 35px;
+    word-break: break-all;
+    text-align: center;
+    color: #1da593;
 }
 
 img > .column {
@@ -62,7 +83,14 @@ img > .column {
 }
 
 h3 {
+    font-size: 25px;
     text-align: center;
+    color: #1da593;
+}
+
+.content {
+    background-color:#f1f1f1;
+    padding: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -76,5 +104,12 @@ h3 {
         width: 50%;
     }
 }
+
+img:hover {
+    box-shadow: 15px 15px 10px #333;
+}
+
+/* CSS du modale*/
+
 
 </style>

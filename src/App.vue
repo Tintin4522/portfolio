@@ -3,6 +3,7 @@ import HeaderPage from './components/HeaderPage.vue'
 import HomePage from './components/HomePage.vue'
 import ProjetsPage from './components/ProjetsPage.vue'
 import FooterPage from './components/FooterPage.vue'
+import ContactPage from './components/ContactPage.vue'
 </script>
 
 <template>
@@ -20,6 +21,11 @@ import FooterPage from './components/FooterPage.vue'
     <div class="Projets">
       <ProjetsPage />
     </div>
+
+    <div class="Contact">
+      <ContactPage />
+    </div>
+
   </main>
   
   <footer>
@@ -35,6 +41,8 @@ import FooterPage from './components/FooterPage.vue'
 
 main {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 
 </style>

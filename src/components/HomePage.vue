@@ -3,14 +3,14 @@
 </script>
 
 <template>
+  <h1>Qui suis-je ?</h1>
   <div class="container">
     <img src="../img/Nature.jpg" alt="image nature" style="width: auto;">
     <div class="presMe">
       <div class="textImg">
-      <h3>Qui je suis ?</h3>
       <p>
-        Bonjour, je m'appel Tintin4522, j'ai 37 ans et je suis en reconversion professionnelle en tant que Développeur Web. <br>
-        Je vais vous présentez ici mes différentes réalisation en HTML, CSS et JavaScript. <br>
+        Bonjour, je m'appelle Tintin4522, j'ai 37 ans et je suis en reconversion professionnelle en tant que Développeur Web. <br>
+        Je vais vous présenter ici mes différentes réalisation en HTML, CSS et JavaScript. <br>
         Bonne visite à vous.
       </p>
       </div>
@@ -21,8 +21,15 @@
 
 <style scoped>
 
+h1 {
+  font-size: 50px;
+  color: #1da593;
+  word-break: break-all;
+  text-align: center;
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -43,7 +50,7 @@
 }
 
 .textImg {
-  position: absolute;
+    position: absolute;
   width: 100%;
   height: 100%;
   color: black;
