@@ -1,7 +1,8 @@
 <script setup>
 
-
-
+import CV from '@/Modale/CV.vue';
+import CahierCharges from '@/Modale/CahierCharges.vue';
+import ComDynamique from '@/Modale/ComDynamique.vue';
 
 </script>
 
@@ -14,27 +15,14 @@
 
         <div class="imgProjets">
             <div class="column">
-                
-                <button id="myBtn">
-                <div class="content">
-                    <img src="../Proj/CV.png" alt="Mon CV" style="width: 100%;">
-                    <h3>Mon CV</h3>
-                </div>                              
-                </button>
-                
+                <CV />
             </div>
         
             <div class="column">
-                <div class="content">
-                    <img src="../Proj/Cahier.png" alt="Cahier des charges" style="width: 100%;">
-                    <h3>Cahier des charges</h3>
-                </div>
+                <CahierCharges />
             </div>
             <div class="column">
-                <div class="content">
-                    <img src="../Proj/Commentaire.png" alt="espace commentaire" style="width: 100%;">
-                    <h3>Espace commentaire dynamique</h3>
-                </div>
+                <ComDynamique />
             </div> 
         </div>
     </div>
@@ -42,7 +30,6 @@
 
 <style scoped>
 
-/* CSS de la page*/
 * {
     box-sizing: border-box;
 }
@@ -73,7 +60,8 @@ img > .column {
 
 .column {
     float: left;
-    width: 33%;
+    width: 30%;
+    margin: 10px;
 }
 
 .projets:after {
@@ -82,15 +70,11 @@ img > .column {
     clear: both;
 }
 
-h3 {
-    font-size: 25px;
-    text-align: center;
-    color: #1da593;
-}
 
 .content {
     background-color:#f1f1f1;
     padding: 15px;
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -105,11 +89,9 @@ h3 {
     }
 }
 
-img:hover {
-    box-shadow: 15px 15px 10px #333;
-}
 
-/* CSS du modale*/
+
+
 
 
 </style>

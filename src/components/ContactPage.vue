@@ -1,28 +1,81 @@
 <script>
+import emailjs from '@emailjs/browser'
 
 
+emailjs.init({
+  publicKey: 'N15FlLY8_XtFO7bGj'
+})
 
+
+export default {
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+    };
+  },
+  methods: {
+    sendEmail(event) {
+      event.preventDefault();
+      // Je récupère les données saisies dans le formulaire
+      const name = this.name.trim();
+      const email = this.email.trim();
+      const message = this.message.trim();
+
+      // Je vérifie que les champs ne sont pas vides
+      if (name === '' || email === '' || message === '') {
+        alert('Veuillez remplir tous les champs du formulaire.');
+        return;
+      }
+
+      // Je rassemble mes données dans une constante
+      const formData = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        message: document.querySelector('#message').value,
+      };
+
+      // J'envoie le formulaire à EmailJS
+      emailjs.sendForm('service_0hyj5t1', 'template_e2sh6qy', document.getElementById('contactForm'), formData)
+        .then((response) => {
+          console.log('Email envoyé avec succès', response);
+          // Réinitialiser le formulaire après l'envoi
+          this.name = '';
+          this.email = '';
+          this.message = '';
+
+          alert('Votre message à bien été envoyé !')
+        })
+        .catch((error) => {
+          console.error('Erreur envoi mail:', error);
+        });
+    }
+  }
+};
 
 </script>
 
 <template>
-    <h1>Me contacter</h1>
-    <div class="local">
-      <div class="name">
-        <label for="name">Nom :</label>
-        <input type="text" id="name">
-      </div>
-      <div class="email">
-        <label for="email">E-mail :</label>
-        <input type="email" id="email">
-      </div>
-    </div>  
-      <div class="message">
-        <label for="message">Message :</label>
-        <textarea id="message"></textarea>
-      </div>      
-    
-    <button type="submit">Envoyer</button>
+    <form id="contactForm">
+      <h1>Me contacter</h1>
+      <div class="local">
+        <div class="name">
+          <label for="name">Nom / Prénom :</label>
+          <input type="text" id="name" v-model="name">
+        </div>
+        <div class="email">
+          <label for="email">E-mail :</label>
+          <input type="email" id="email" v-model="email">
+        </div>
+      </div>  
+        <div class="message">
+          <label for="message">Message :</label>
+          <textarea id="message" v-model="message"></textarea>
+        </div>      
+      
+      <button type="submit" @click="sendEmail">Envoyer</button>
+    </form>
 </template>
 
 <style scoped>

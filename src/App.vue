@@ -4,6 +4,8 @@ import HomePage from './components/HomePage.vue'
 import ProjetsPage from './components/ProjetsPage.vue'
 import FooterPage from './components/FooterPage.vue'
 import ContactPage from './components/ContactPage.vue'
+
+
 </script>
 
 <template>
@@ -25,7 +27,6 @@ import ContactPage from './components/ContactPage.vue'
     <div class="Contact">
       <ContactPage />
     </div>
-
   </main>
   
   <footer>

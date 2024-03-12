@@ -5,9 +5,11 @@
 <template>
   <div class="greetings">
     <div class="navBar">  
-      <a href="">Présentation</a>
+      <a href="#">Acceuil</a>
+      <!--<a href=""><RouterLink :to="{ name: '404notfound'}">Mes projets</RouterLink></a>
+      <a href=""><RouterLink :to="{ name: '404notfound'}">Me contacter</RouterLink></a>
       <a href="">Mes projets</a>
-      <a href="">Me contacter</a>
+      <a href="">Me contacter</a>-->
       <a href="#" ><img class="btnUpPage"  src="../img/home2.png" alt="bouton retour haut page"></a>
     </div>
   </div>
@@ -57,6 +59,8 @@ select, option {
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 .greetings {
   overflow: hidden;

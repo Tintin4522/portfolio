@@ -1,0 +1,125 @@
+<script>
+
+export default {
+    data() {
+      return {
+        showModal: false
+      }
+    }
+  }
+
+</script>
+
+<template>
+    <div>
+      <button @click="showModal = true">
+        <button id="myBtn">
+          <div class="content">
+            <img src="../Proj/Cahier.png" alt="Cahier des charges" style="width: 100%;">
+            <h3>Cahier des charges</h3>
+          </div>                              
+        </button>
+      </button>
+        
+      <div v-if="showModal" class="modal">
+        <div class="modal-content">
+          <span class="close" @click="showModal = false">&times;</span>
+          <h4>Réalisation d'un cahier des charges pour un client</h4>
+          <h5>le 22 janvier 2024</h5>
+          <div class="descriptif">
+            <div class="langages">Technoogies utlisées:
+              <ul>
+                <li>Publisher pour la mise en page, création du contenue et conversion en format PDF</li>
+                <li>Internet pour l'étude de la concurrence</li>  
+              </ul>
+            </div>
+            <div class="details">
+              <p>Veuillez cliquer sur l'icône ci-dessous pour télécharger le cahier des charges complet :</p>
+              <p class="LienDll">         
+              <a href="../Fichiers/Cahier des charges La Socketterie.pdf" download=""><img class="imgDll" src="../img/download-icon.png" alt="lien du projet sur linkedin"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>
+
+<style scoped>
+
+#myBtn:hover {
+  box-shadow: 15px 15px 10px #333;
+  cursor: zoom-in;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  color: #1da593;
+}
+
+h4 {
+  font-size: 25px;
+  text-align: center;
+  color: #1da593;
+}
+
+h5 {
+  font-size: 18px;
+  text-align: center;
+  color: #1da593;
+}
+
+.imgDll {
+  height: 75px;
+  width: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.descriptif {
+  text-align: center;
+}
+
+.details {
+  margin-top: 50px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+ 
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
