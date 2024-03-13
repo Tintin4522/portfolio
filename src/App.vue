@@ -35,9 +35,16 @@ import ContactPage from './components/ContactPage.vue'
 </template>
 
 <style scoped>
+@font-face {
+    font-family: Ojuju;
+    src: url(../Police/Ojuju-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
 * {
+  font-family: Ojuju;
   box-sizing: border-box;
-  background-color: #f1f1f1;
+  background-color: #483d3f;
 }
 
 main {

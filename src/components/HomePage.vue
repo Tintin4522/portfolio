@@ -28,12 +28,17 @@ h1 {
   text-align: center;
 }
 
+p {
+  font-size: 25px;
+  font-weight: 800;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .container {
-  background-color: #f1f1f1;
+  background-color: #483d3f;
   position: relative;
   display: flex;
   justify-content: center;

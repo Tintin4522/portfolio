@@ -74,7 +74,7 @@ export default {
           <textarea id="message" v-model="message"></textarea>
         </div>      
       
-      <button type="submit" @click="sendEmail">Envoyer</button>
+      <button type="submit" @click="sendEmail">ENVOYER</button>
     </form>
 </template>
 
@@ -91,21 +91,21 @@ h1 {
   font-size: 20px;
   word-break: break-all;
   text-align: center;
-  color: #1da593;
+  color: #9297c4;
 }
 
 .email label {
   font-size: 20px;
   word-break: break-all;
   text-align: center;
-  color: #1da593;
+  color: #9297c4;
 }
 
 .message label {
   font-size: 30px;
   word-break: break-all;
   text-align: center;
-  color: #1da593;
+  color: #9297c4;
 }
 
 .local {
@@ -117,7 +117,7 @@ h1 {
 .name {
   display: table;
   grid-column: 1/2;
-  border: 3px solid #1da593;
+  border: 3px solid #9297c4;
   margin: 20px;
   padding: 12px;
   width: 60%;
@@ -131,7 +131,7 @@ h1 {
 .email {
   display: table;
   grid-column: 2/2;
-  border: 3px solid #1da593;
+  border: 3px solid #9297c4;
   margin: 20px;
   padding: 12px;
   width: 60%;
@@ -143,7 +143,7 @@ h1 {
 
 .message {
   display: table;
-  border: 3px solid #1da593;
+  border: 3px solid #9297c4;
   margin: 0 auto;
   width: auto;
   top: 25%;
@@ -160,14 +160,17 @@ input {
   overflow: visible;
   border-radius: 50px;
   margin: 25px;
-  border: 2px outset #1da593;
+  border: 2px outset #9297c4;
+  background-color: #F4EBD9;
 }
 
 button {
+  font-size: 30PX;
+  color: #9297c4;
   margin: 0 auto;
   display: block;
-  border: 5px solid #1da593;
-  background-color: #f1f1f1;
+  border: 5px solid #9297c4;
+  background-color: #F4EBD9;
   top: 25%;
   left: 25%;
   width: 25%;
@@ -186,9 +189,10 @@ textarea {
   height: 250px;
   border-radius: 50px;
   margin: 25px;
-  border: 2px outset #1da593;
+  border: 2px outset #9297c4;
   padding: 25px;
   font-size: 25px;
+  background-color: #F4EBD9;
 }
 
 </style>

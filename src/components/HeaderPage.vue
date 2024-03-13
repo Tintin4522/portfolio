@@ -5,17 +5,25 @@
 <template>
   <div class="greetings">
     <div class="navBar">  
-      <a href="#">Acceuil</a>
-      <!--<a href=""><RouterLink :to="{ name: '404notfound'}">Mes projets</RouterLink></a>
-      <a href=""><RouterLink :to="{ name: '404notfound'}">Me contacter</RouterLink></a>
-      <a href="">Mes projets</a>
-      <a href="">Me contacter</a>-->
+      <a href="#">ACCUEIL</a>
+      <a href="">MES PROJETS</a>
+      <a href="">ME CONTACTER</a>
       <a href="#" ><img class="btnUpPage"  src="../img/home2.png" alt="bouton retour haut page"></a>
     </div>
   </div>
 </template>
 
 <style scoped>
+@font-face {
+  font-family: Ojuju;
+  src: url(../Police/Ojuju-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+
+* {
+  font-family: Ojuju;
+}
+
 .btnUpPage {
   height: 40px;
   width: 40 px;
@@ -36,31 +44,17 @@ figure a:hover {
 }
 
 header {
-  color: white;
+  color: #483d3f;
   background-color: #1da593;
   text-align: center;
-}
-
-header, nav {
-  color: white;
-  background-color: #1da593;
-  justify-content: space-between;
-}
-
-select, option {
-  color: white;
-  background-color: #1da593;
-  border: white 2px solid;
-  margin: 0 0 2rem 0;
 }
 
 .navBar  {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-weight: 800;
 }
-
-
 
 .greetings {
   overflow: hidden;
@@ -74,15 +68,15 @@ select, option {
 .greetings a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #483d3f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navBar a:hover {
-  background: hsl(315, 14%, 95%);
-  color:#1da593;
+  background: #483d3f;
+  color:#f4ebd9;
   text-decoration: underline;
 }
 

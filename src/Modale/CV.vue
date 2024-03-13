@@ -5,6 +5,7 @@
         showModal: false
       };
     },
+    
   }
     
 
@@ -27,13 +28,13 @@
         <span class="close" @click="showModal = false">&times;</span>
         <h4>Réalisation de mon CV</h4>
         <h5>le 16 janvier 2024</h5>
-        <p class="title">langages utilisés pour la réalisation:</p>
+        <p class="title">Langages utilisés pour la réalisation :</p>
         <div class="descriptif">
           <div class="langages">            
             <ul>
-              <li>HTML pour le balisage du site</li>
-              <li>CSS pour la mise en forme</li>
-              <li>GitHub pour la sauvegarde et le versionning</li>  
+              <li> -> HTML pour le balisage du site</li>
+              <li> -> CSS pour la mise en forme</li>
+              <li> -> GitHub pour la sauvegarde et le versionning</li>  
             </ul>
           </div>   
           <div class="Git">      
@@ -48,6 +49,10 @@
 
    
 <style scoped>
+* {
+  font-family: Ojuju;
+  font-weight: 600;
+}
 
 h3 {
   font-size: 25px;
@@ -58,17 +63,24 @@ h3 {
 h4 {
   font-size: 25px;
   text-align: center;
-  color: #1da593;
+  color: #f1f1f1;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  color: #1da593;
+  color: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 #myBtn:hover {
-  box-shadow: 15px 15px 10px #333;
+  box-shadow: 15px 15px 10px #f4ebd9;
   cursor: zoom-in;
 }
 
@@ -86,10 +98,12 @@ h5 {
 .title {
   text-align: center;
   padding-top: 20px;
+  color: white;
 }
 
 .descriptif {
   text-align: center;
+  color: white;
 }
 
 .modal {
@@ -97,34 +111,38 @@ h5 {
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
 }
  
 .modal-content {
-  background-color: #fefefe;
+  background-color: #77685D;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid #9297c4;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
  
 .close {
-  color: #aaa;
+  background-color: #1da593;
+  color: #f4ebd9;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 3px solid #f4ebd9;
 }
  
 .close:hover,
 .close:focus {
-  color: black;
+  color: #483d3f;
   text-decoration: none;
   cursor: pointer;
 }

@@ -30,12 +30,14 @@ import ComDynamique from '@/Modale/ComDynamique.vue';
 
 <style scoped>
 
+
 * {
+    font-family: Ojuju;
     box-sizing: border-box;
 }
 
 .projets {
-    background-color: #f1f1f1;
+    background-color: #483d3f;
     max-width: 1520px;
     margin: auto;
 }
@@ -51,7 +53,7 @@ h2 {
     font-size: 35px;
     word-break: break-all;
     text-align: center;
-    color: #1da593;
+    color: #9297c4;
 }
 
 img > .column {
