@@ -17,7 +17,6 @@ import ComDynamique from '@/Modale/ComDynamique.vue';
             <div class="column">
                 <CV />
             </div>
-        
             <div class="column">
                 <CahierCharges />
             </div>
@@ -90,10 +89,6 @@ img > .column {
         width: 50%;
     }
 }
-
-
-
-
 
 
 </style>

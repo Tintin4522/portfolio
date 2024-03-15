@@ -1,7 +1,7 @@
 <script>
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser' //j'importe EmailJS
 
-
+// j'enregistre ma clé
 emailjs.init({
   publicKey: 'N15FlLY8_XtFO7bGj'
 })
