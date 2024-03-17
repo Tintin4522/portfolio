@@ -1,29 +1,33 @@
 # portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Réalisation de mon portfolio, avec utlisation du Framework Javascript VueJS 3
 
-## Recommended IDE Setup
+![Getting Started](./src/Img%20Readme/Visuel%201.png)
+![Getting Started](./src/Img%20Readme/Visuel%202.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+##  IDE Recommandé
+
+[VSCode](https://code.visualstudio.com/).
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Voici comment configurer ViteJS [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Configuration du projet
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compiler et afficher dans votre navigateur pour le développement
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Réalisation de modale intégré dans le projet
 
-```sh
-npm run build
-```
+![Getting Started](./src/Img%20Readme/Modale.png)
+
+
+### Si ce projet vous a aidez, n'hésitez pas à me laisser une petite étoile
