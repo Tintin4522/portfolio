@@ -9,6 +9,11 @@ Réalisation de mon portfolio, avec utlisation du Framework Javascript VueJS 3
 
 [VSCode](https://code.visualstudio.com/).
 
+## Langages utilsé pour le développement
+        # HTML
+        # CSS
+        # JavaScript
+
 ## Customize configuration
 
 Voici comment configurer ViteJS [Vite Configuration Reference](https://vitejs.dev/config/).
@@ -29,5 +34,5 @@ npm run dev
 
 ![Getting Started](./src/Img%20Readme/Modale.png)
 
-
-### Si ce projet vous a aidez, n'hésitez pas à me laisser une petite étoile
+----
+### :star: Si ce projet vous a aidez, n'hésitez pas à me laisser une petite étoile :star:
